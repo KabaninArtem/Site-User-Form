@@ -6,6 +6,10 @@ h1 {
     text-align: center;
 }
 
+strong {
+    font-weight: 900;
+}
+
 form {
     width: 500px;
     margin: auto;
@@ -13,4 +17,8 @@ form {
 
 form input {
     margin: 5px 0;
+}
+
+form textarea {
+    resize: none;
 }
