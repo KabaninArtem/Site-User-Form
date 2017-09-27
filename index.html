@@ -22,7 +22,7 @@
         <br>
         <span>Your phone number:</span>
         <br>
-        <input type="text" name="mobile" value="+380" pattern="\+380\[0-9]{9}" required>
+        <input type="text" name="phone" value="+380" pattern="\+380\[0-9]{9}" required>
         <br>
         <input type="email" name="email" placeholder="email@example.com" required>
         <br>
@@ -41,8 +41,15 @@
         <span>Add photo</span>
         <br>
         <input type="file" name="user_photo" accept="image/png, image/jpeg">
+    </fieldset>
+    <fieldset>
+        <legend><strong>Password for your account</strong></legend>
+        <span><em>Rules: from four to sixteen symbols. One lowercase letter, one uppercase letter, one number and one symbol.</em></span>
         <br>
-        <input type="submit" value="submit">
+        <br>
+        <span><strong>Type your password:</strong></span>
+        <br>
+        <input type="password" placeholder="password" name="psw" pattern="(?=^.{4,16}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
     </fieldset>
 </form>
 
